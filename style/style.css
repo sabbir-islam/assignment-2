@@ -14,14 +14,17 @@
   --bg-white: rgb(255, 255, 255);
 }
 .header {
-  width: 1260px;
+width: 1440px;
   margin: 0 auto;
 }
 
 .display-flex {
   display: flex;
 }
+
+/* nabvar section style are start here */
 .nav-bar {
+    width: 1260px;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
@@ -73,39 +76,88 @@
   font-weight: 600;
   line-height: 1.87rem;
 }
-.hamburger{
-    display: none;
-    cursor: pointer;
-    margin: 0 auto;
-    padding: 7.5px 3.75px;
-    width: 30px;
-    height: 30px;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 7.5px 3.75px;
+  width: 30px;
+  height: 30px;
 }
-.hamburger-icon span{
-    display: block;
-    height: 3px;
-    width: 25px;
+.hamburger-icon span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background: var(--bg-1);
+  margin-bottom: 5px;
+}
+
+/* banner section style start here */
+
+.banner {
+    width: 1260px;
+  align-items: center;
+}
+.banner-content {
+  margin-right: 50px;
+}
+.banner-tittle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.81rem;
+  margin-bottom: 24px;
+}
+.banner-desc{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.56rem ;
+    margin-bottom: 24px;
+}
+.banner-img{
+    width: 100%;
+}
+.btn-banner {
     background: var(--bg-1);
-    margin-bottom: 5px;
-}   
-@media screen and (max-width: 600px){
-    .header{
-        width: auto;
-        border: 0.5px solid rgb(254, 163, 1);
-    }
-    .nav-bar{
-        height: 46px;
-        justify-content: space-between;
-        margin: 0 10px;
-    }
-    .nav-link,.nav-tittle, .btn-primary{
-        display: none;
-    }
-    .hamburger{
-        display: flex;
-        margin-right: 33px;
-    }
-    .ham-img{
-        width: 100%;
-    }
+    color: var(--bg-white);
+    border: none;
+    border-radius: 12px;
+    width: 160px;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.87rem;
+  }
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: auto;
+  }
+  .nav-bar {
+    width: auto;
+    height: 46px;
+    justify-content: space-between;
+    border: 0.5px solid rgb(254, 163, 1);
+  }
+  .nav-link,
+  .nav-tittle,
+  .btn-primary {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    margin-right: 33px;
+  }
+  .ham-img {
+    width: 100%;
+  }
+  .banner{
+    width: auto;
+    flex-direction: column-reverse;
+    padding: 20px 0;
+  }
+  .banner-content{
+    text-align: center;
+    margin: 20px 20px;
+  }
 }
