@@ -13,7 +13,7 @@
   --bg-5: rgb(93, 88, 239);
   --bg-white: rgb(255, 255, 255);
 }
-header {
+.header {
   width: 1260px;
   margin: 0 auto;
 }
@@ -24,7 +24,6 @@ header {
 .nav-bar {
   justify-content: space-between;
   align-items: center;
-  /* height: 102px; */
   padding: 20px 0;
 }
 .nav-logo {
@@ -90,11 +89,23 @@ header {
     margin-bottom: 5px;
 }   
 @media screen and (max-width: 600px){
-    .nav-link,.nav-logo, .btn-primary{
+    .header{
+        width: auto;
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+    .nav-bar{
+        height: 46px;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+    .nav-link,.nav-tittle, .btn-primary{
         display: none;
     }
     .hamburger{
         display: flex;
+        margin-right: 33px;
     }
-    
+    .ham-img{
+        width: 100%;
+    }
 }
