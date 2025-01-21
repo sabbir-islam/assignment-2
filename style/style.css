@@ -13,6 +13,7 @@
   --bg-5: rgb(93, 88, 239);
   --bg-white: rgb(255, 255, 255);
 }
+
 .header {
   width: 1440px;
   margin: 0 auto;
@@ -78,9 +79,9 @@
   line-height: 1.87rem;
 }
 .btn-primary:hover {
-    background: linear-gradient(90deg,rgb(1, 172, 253), rgb(254, 163, 1));
-    cursor: pointer;
-  }
+  background: linear-gradient(90deg, rgb(1, 172, 253), rgb(254, 163, 1));
+  cursor: pointer;
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -134,18 +135,16 @@
   font-weight: 600;
   line-height: 1.87rem;
 }
-.btn-banner:hover{
-    background: linear-gradient(90deg,rgb(1, 172, 253), rgb(254, 163, 1));
-    cursor: pointer;
+.btn-banner:hover {
+  background: linear-gradient(90deg, rgb(1, 172, 253), rgb(254, 163, 1));
+  cursor: pointer;
 }
+
 /* curriculum section style start hereL */
-main{
-    width: 1260px;
-    margin: 0 auto;
-}
 .curriculum {
   padding: 60px 0;
   background: url("../assets/bg.png");
+  background-repeat: no-repeat;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -157,8 +156,8 @@ main{
 }
 .curriculum-container {
   display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   margin-top: 100px;
   width: 1260px;
 }
@@ -186,38 +185,142 @@ main{
   line-height: 1.93rem;
 }
 .curriculum-card p {
-  font-family: Raleway;
+  color: rgb(128, 128, 128);
+  font-family: "Raleway";
   font-size: 0.94rem;
   font-weight: 500;
   line-height: 1.76rem;
 }
-.curriculum-card span{
-font-size: 0.94rem;
+.curriculum-card span {
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.76rem;
+}
+
+.slide-nav {
+  margin-top: 100px;
+  align-items: center;
+  gap: 10px;
+}
+.slide-btn {
+  background-color: var(--bg-2);
+  padding: 20px 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  color: var(--bg-white);
+  cursor: pointer;
+}
+.slide-btn:hover {
+  background: linear-gradient(90deg, rgb(1, 172, 253), rgb(254, 163, 1));
+  cursor: pointer;
+}
+
+/* our story style start here */
+
+.story {
+  margin: 0 auto;
+  background: url("../assets/bg.png"),
+    linear-gradient(
+      to top,
+      rgba(254, 163, 1, 0.3),
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+}
+
+.story-tittle {
+  font-size: 2.87rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  margin-bottom: 80px;
+}
+.story-con {
+  width: 1260px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container {
+  gap: 70px;
+}
+.story-card-main {
+  width: 540.27px;
+  border-radius: 16px 16px 0px 0px;
+  background: var(--bg-white);
+  overflow: hidden;
+  position: relative;
+}
+.story-card-main img {
+  width: 100%;
+}
+.main-card-tittle{
+  color: var(--bg-1);
+  font-size: 1.5rem;
 font-weight: 700;
-line-height: 1.76rem;
+line-height: 2.39rem;
+margin-bottom: 40px;
 }
-
-.slide-nav{
-margin-top: 100px;
-align-items: center;
-gap: 10px;
+.main-card-desc{
+  color: rgb(102, 102, 102);
+font-family: "Raleway";
+font-size: 0.95rem;
+font-weight: 500;
+line-height: 1.79rem;
 }
-.slide-btn{
-background-color: var(--bg-2);
-padding: 20px 20px;
-width: 60px;
-height: 60px;
-border-radius: 30px;
-border: none;
-color: var(--bg-white);
-cursor: pointer;
+.card-content {
+  margin-left: 30px;
+  margin-top: 36px;
 }
-.slide-btn:hover{
-    background: linear-gradient(90deg,rgb(1, 172, 253), rgb(254, 163, 1));
-    cursor: pointer;
+.story-btn {
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
+  width: 174.51px;
+  border: none;
+  padding: 14px 18px;
+  position: absolute;
+  transform: translateY(-60px);
+  color: var(--bg-white);
 }
-
-
+.story-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.story-card {
+  width: 290.69px;
+  height: 301.61px;
+  background: var(--bg-white);
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+}
+.story-card-tittle{
+  font-size: 0.95rem;
+font-weight: 700;
+line-height: 1.79rem;
+}
+.story-card h3,
+button {
+  margin-left: 20px;
+}
+.story-card img {
+  width: 100%;
+}
+.story-btn-2 {
+  border-radius: 47.93px;
+  background: rgb(149, 178, 38);
+  transform: translateY(-25px);
+  border: none;
+  width: 174.51px;
+  height: 38.35px;
+  padding: 10px 18px;
+  color: var(--bg-white);
+}
 
 @media screen and (max-width: 600px) {
   .header {
@@ -251,19 +354,18 @@ cursor: pointer;
     text-align: center;
     margin: 20px 20px;
   }
-  main{
+  main {
     width: 100%;
     margin: 0 auto;
   }
-  .curriculum{
+  .curriculum {
     text-align: center;
   }
-  .curriculum-container{
-    grid-template-columns: repeat(1,1fr);
+  .curriculum-container {
+    grid-template-columns: repeat(1, 1fr);
     width: auto;
   }
-  .slide-btn{
+  .slide-btn {
     display: none;
   }
-
 }
