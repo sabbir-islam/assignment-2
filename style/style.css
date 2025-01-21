@@ -329,6 +329,67 @@ button {
   text-align: left;
 }
 
+
+
+
+
+/* footer section are start from here */
+.footer{
+  background: rgb(1, 172, 253);
+  height: 419px;
+  margin: 0 auto;
+  padding-top: 220px;
+}
+.footer-container{
+  width: 1260px;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: var(--bg-white);
+  gap: 100px;
+}
+.footer-logo-c{
+  margin-bottom: 35px;
+  gap: 10px;
+}
+.footer-nav{
+  flex-direction: column;
+}
+.footer-link{
+  text-decoration: none ;
+  color: var(--bg-white);
+  font-size: 1.25rem;
+font-weight: 500;
+line-height: 1.56rem;
+  margin-bottom: 20px;
+}
+.footer-nav{
+  flex-direction: column;
+}
+.footer-img{
+  background-color: white;
+  border-radius: 12px;
+  padding: 7px;
+}
+.footer-logo-txt{
+  font-size: 2.62rem;
+font-weight: 700;
+line-height: 2.5rem;
+}
+.logo-desc{
+  width: 399.02px;
+  font-size: 1.25rem;
+font-weight: 400;
+line-height: 1.56rem;
+}
+.footer-tittle{
+  font-size: 1.5rem;
+font-weight: 700;
+line-height: 1.87rem;
+margin-bottom: 32px;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .header {
     width: auto;
@@ -391,5 +452,16 @@ button {
   .story-btn-2 {
     width: 150px;
     padding: 5px 11px;
+  }
+  .footer{
+    height: auto;
+    padding: 60px 40px;
+  }
+  .footer-container{
+    width: auto;
+    flex-direction: column;
+  }
+  .logo-desc{
+    width: auto;
   }
 }
