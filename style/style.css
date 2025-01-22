@@ -15,7 +15,7 @@
 }
 
 .header {
-  width: 1440px;
+  width: 1260px;
   margin: 0 auto;
 }
 
@@ -101,12 +101,13 @@
 /* banner section style start here */
 
 .banner {
+  align-items: center;
   width: 1260px;
   margin: 0 auto;
-  align-items: center;
 }
 .banner-content {
   margin-right: 50px;
+  text-align: start;
 }
 .banner-tittle {
   font-size: 3.5rem;
@@ -134,10 +135,17 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.87rem;
+  margin-left: 0px;
 }
 .btn-banner:hover {
   background: linear-gradient(90deg, rgb(1, 172, 253), rgb(254, 163, 1));
   cursor: pointer;
+}
+.marquee-txt {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.87rem;
 }
 
 /* curriculum section style start hereL */
@@ -196,7 +204,40 @@
   font-weight: 700;
   line-height: 1.76rem;
 }
-
+.span-bg-1 {
+  color: rgb(100, 200, 255);
+  cursor: pointer;
+}
+.span-bg-2 {
+  color: rgb(240, 170, 0);
+  cursor: pointer;
+}
+.span-bg-3 {
+  color: rgb(135, 0, 255);
+  cursor: pointer;
+}
+.c-card-bg-2 {
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.c-card-bg-3 {
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
 .slide-nav {
   margin-top: 100px;
   align-items: center;
@@ -299,13 +340,13 @@
   border-radius: 16px;
   overflow: hidden;
 }
-.display-none{
+.display-none {
   display: none;
 }
 .story-card-tittle {
   font-size: 0.95rem;
   font-weight: 700;
-  line-height: 1.70rem;
+  line-height: 1.7rem;
 }
 .story-card h3,
 button {
@@ -323,72 +364,69 @@ button {
   height: 38.35px;
   padding: 0px 18px;
   color: var(--bg-white);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.79rem;
   text-align: left;
 }
-
-
-
-
+.story-btn-2-bg{
+  background: rgb(93, 88, 240);
+}
 
 /* footer section are start from here */
-.footer{
+.footer {
   background: rgb(1, 172, 253);
   height: 419px;
   margin: 0 auto;
   padding-top: 220px;
 }
-.footer-container{
+.footer-container {
   width: 1260px;
   margin: 0 auto;
   justify-content: space-between;
   color: var(--bg-white);
   gap: 100px;
 }
-.footer-logo-c{
+.footer-logo-c {
   margin-bottom: 35px;
   gap: 10px;
 }
-.footer-nav{
+.footer-nav {
   flex-direction: column;
 }
-.footer-link{
-  text-decoration: none ;
+.footer-link {
+  text-decoration: none;
   color: var(--bg-white);
   font-size: 1.25rem;
-font-weight: 500;
-line-height: 1.56rem;
+  font-weight: 500;
+  line-height: 1.56rem;
   margin-bottom: 20px;
 }
-.footer-nav{
+.footer-nav {
   flex-direction: column;
 }
-.footer-img{
+.footer-img {
   background-color: white;
   border-radius: 12px;
   padding: 7px;
 }
-.footer-logo-txt{
+.footer-logo-txt {
   font-size: 2.62rem;
-font-weight: 700;
-line-height: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
 }
-.logo-desc{
+.logo-desc {
   width: 399.02px;
   font-size: 1.25rem;
-font-weight: 400;
-line-height: 1.56rem;
+  font-weight: 400;
+  line-height: 1.56rem;
 }
-.footer-tittle{
+.footer-tittle {
   font-size: 1.5rem;
-font-weight: 700;
-line-height: 1.87rem;
-margin-bottom: 32px;
+  font-weight: 700;
+  line-height: 1.87rem;
+  margin-bottom: 32px;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .header {
@@ -443,7 +481,7 @@ margin-bottom: 32px;
     width: 180px;
     height: 280.61px;
   }
-  .display-none{
+  .display-none {
     display: block;
   }
   .story-con {
@@ -453,15 +491,15 @@ margin-bottom: 32px;
     width: 150px;
     padding: 5px 11px;
   }
-  .footer{
+  .footer {
     height: auto;
     padding: 60px 40px;
   }
-  .footer-container{
+  .footer-container {
     width: auto;
     flex-direction: column;
   }
-  .logo-desc{
+  .logo-desc {
     width: auto;
   }
 }
